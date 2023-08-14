@@ -1,0 +1,108 @@
+GET http://localhost:4000/nikoncamera
+
+###
+
+POST http://localhost:4000/nikoncamera
+Content-Type: application/json
+
+    {
+        "model": "5600D",
+        "price": 36000
+    }
+
+###
+
+GET http://localhost:4000/canoncamera
+
+###
+
+POST http://localhost:4000/canoncamera
+Content-Type: application/json
+
+    {
+        "model": "400d",
+        "price": 20000
+    }
+
+
+###
+
+GET http://localhost:4000/sonycamera
+
+###
+
+POST http://localhost:4000/sonycamera
+Content-Type: application/json
+
+    {
+        "model": "A6400",
+        "price": 48000
+    }
+###
+
+GET http://localhost:4000/canonlens
+
+###
+
+POST http://localhost:4000/canonlens
+Content-Type: application/json
+
+    {
+        "model": "Canon 250mm",
+        "price": 10000
+    }
+
+###
+
+GET http://localhost:4000/nikonlens
+
+###
+
+POST http://localhost:4000/nikonlens
+Content-Type: application/json
+
+    {
+        "model": "Nikon 18-55mm",
+        "price": 4000
+    }
+
+###
+
+GET http://localhost:4000/sonylens
+
+###
+
+POST http://localhost:4000/sonylens
+Content-Type: application/json
+
+    {
+        "model": "Sony 50mm",
+        "price": 7000
+    }
+
+###
+
+POST http://localhost:4000/mobilenumber
+Content-Type: application/json
+
+    {
+        "mobilenumber": 9945807349,
+        "brand": "Canon",
+        "model": "EOS 200D",
+        "lenses": ["Lens A", "Lens B"]
+    }
+
+###
+
+GET http://localhost:4000/mobilenumber
+
+###
+
+POST http://localhost:4000/finalprice
+Content-Type: application/json
+
+    {
+        "brand": "Canon",
+        "model": "EOS 200D",
+        "totalPrice": 1500
+    }
