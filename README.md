@@ -26,11 +26,7 @@ APIs: Leverages external APIs to fetch comprehensive camera and accessory data, 
 
 State Management: Employing React Context API and SWR (React hooks for data fetching) to efficiently manage state and data synchronization.
 
-Deployment: Hosted on Heroku for reliable and accessible deployment, ensuring the application is available to users at all times.
+Deployment:-
+Frontend: The frontend of the application is hosted on Vercel, a powerful platform that provides continuous deployment, automatic scaling, and an intuitive interface for managing deployments.
 
-Getting Started:
-Clone the repository: git clone https://github.com/your-username/camco-frontend.git
-Navigate to the project directory: cd camco-frontend
-Install dependencies: npm install
-Start the development server: npm run dev
-Access Camco by opening your browser and visiting http://localhost:3000.
+Backend: The backend is hosted on Heroku, a trusted cloud platform that offers a straightforward way to deploy, manage, and scale applications.
