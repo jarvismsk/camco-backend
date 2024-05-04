@@ -21,8 +21,25 @@ db.once('open', () => {
   console.log('Connected to Database');
 });
 
-// Routes
-// ... (your route configurations)
+// Define your routes
+const canonCameraRouter = require('./routes/canonCamera');
+const canonLensRouter = require('./routes/canonLens');
+const finalPriceRouter = require('./routes/finalPrice');
+const mobilenumberRouter = require('./routes/mobilenumber');
+const nikonCameraRouter = require('./routes/nikonCamera');
+const nikonLensRouter = require('./routes/nikonLens');
+const sonyCameraRouter = require('./routes/sonyCamera');
+const sonyLensRouter = require('./routes/sonyLens');
+
+// Use the routes
+app.use('/canonCamera', canonCameraRouter);
+app.use('/canonLens', canonLensRouter);
+app.use('/finalPrice', finalPriceRouter);
+app.use('/mobilenumber', mobilenumberRouter);
+app.use('/nikonCamera', nikonCameraRouter);
+app.use('/nikonLens', nikonLensRouter);
+app.use('/sonyCamera', sonyCameraRouter);
+app.use('/sonyLens', sonyLensRouter);
 
 // Server
 const PORT = process.env.PORT || 4000;
